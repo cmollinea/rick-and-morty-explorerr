@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scrollbar-width: none;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  place-content: center;
+
+}
+
+.getBigger {
+  transform: scale(0);
+  animation: getBig 0.5s ease forwards;
+}
+
+@keyframes getBig {
+  to {
+    transform: scale(100%);
+  }
+}
